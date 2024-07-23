@@ -13,7 +13,7 @@ const getLocation = () => {
 };
 
 const fetchWeatherData = async (latitude, longitude) => {
-    const apiKey = 'ffb6a6e9b50f41d900736a1f3e3940aa'; // Ensure API key is correct
+    const apiKey = 'ffb6a6e9b50f41d900736a1f3e3940aa'; // Ensure this API key is correct
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
 
     try {
@@ -48,7 +48,7 @@ getCurrentLocationWeather();
 let city = document.getElementById("city");
 let searchBtn = document.getElementById("search");
 let url = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
-let apiKey = "&appid=ffb6a6e9b50f41d900736a1f3e3940aa"; // Ensure API key is correct
+let apiKey = "&appid=ffb6a6e9b50f41d900736a1f3e3940aa"; // Ensure this API key is correct
 let weatherResult = document.getElementById("weather-result");
 let temp = document.getElementById("temp");
 let cityName = document.getElementById("city-name");
