@@ -39,10 +39,10 @@ const fetchWeatherData = async (latitude, longitude) => {
       throw new Error('Network response was not ok ' + response.statusText);
     }
     const weatherData = await response.json();
-    console.log(weatherData);
+    
     updateData(weatherData)
     updateBgImg(weatherData.main.name)
-    console.log(weatherData.name.toString())
+    
   } catch (error) {
     console.error('There has been a problem with your fetch operation:', error);
   }
@@ -84,8 +84,7 @@ function updateData(data) {
   cityName.innerHTML = data.name;
   humidity.innerHTML = data.main.humidity + "%";
   windSpeed.innerHTML = Math.round(data.wind.speed * 3.6) + " Km/h";
-
-  console.log(data);
+;
   let weather = data.weather[0].main;
   weatherStatus.innerHTML =
     data.weather[0].description.toUpperCase() +
