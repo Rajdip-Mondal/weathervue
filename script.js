@@ -31,7 +31,7 @@ getCurrentLocationWeather();
 
 const fetchWeatherData = async (latitude, longitude) => {
   const apiKey = 'ffb6a6e9b50f41d900736a1f3e3940aa'; // Use your API key
-  const url = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
 
   try {
     const response = await fetch(url);
