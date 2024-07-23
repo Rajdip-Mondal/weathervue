@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+
+      
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+  <body id="body">
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+      <img src="logo.png" alt="" />
+    </div>
+
+    <div class="container" id="container">
+      <h1 class="appName">WeatherVue</h1>
+      <div class="search">
+        <input id="city" type="text" placeholder="Enter City Name" />
+        <i class="fa-solid fa-location-crosshairs" onclick="getCurrentLocationWeather()"></i>
+        <i class="fa-solid fa-magnifying-glass" onClick="getWeatherData()"></i>
+
+      </div>
+     
+      <div class="weather-result">
+        <img id="weather-icon" src="=" alt="" />
+        <p id="status"></p>
+        <h3 id="temp">Search Any City</h3>
+        <h4 id="city-name"></h4>
+
+        <div class="additional-info">
+          <div class="humidity">
+            <img src="./images/humidity.gif" id="additional-icon" alt="" />
+            <div class="text">
+              <h4 id="humidity-percentage">n/a <br /></h4>
+              <p><br />Humidity</p>
+            </div>
+          </div>
+          <div class="wind">
+            <img src="./images/wind.gif" id="additional-icon" alt="" />
+            <div class="text2">
+              <h4 id="wind-speed">n/a<br /></h4>
+              <p><br />Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  
+    <script src="script.js"></script>
+  </body>
+</html>
